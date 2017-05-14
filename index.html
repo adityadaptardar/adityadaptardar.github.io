@@ -20,20 +20,7 @@
 			});
 		});
 </script><!--//end-smooth-scrolling-->
-<script type="text/javascript">
-function SendMail() {
-    var link = "mailto:aditya.daptardar@gmail.com"
-             + "&subject=" + escape("Enquiry from adityahere.com")
-             + "&body=" 
-			 + "\nName: "+escape(document.getElementById('Name').value)
-			 + "\nEmail: "+escape(document.getElementById('Email').value)
-			 + "\nPhone: "+escape(document.getElementById('Phone').value)
-			 + "\nMessage: "+escape(document.getElementById('Message').value)
-    ;
 
-    window.location.href = link;
-}
-</script
 </head>
 <body><!--banner-->
 <div class="banner" id="home">
@@ -686,7 +673,7 @@ Hyderabad-500032,India</p>
 							<input class="email" name="Email" type="text" placeholder="Email" required="">
 							<input class="phone" name="Phone" type="text" placeholder="Phone" required="">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="button" onClick="SendMail()">
+							<input type="submit" onClick=SendMail()>
 						</form>
 </div>
 
@@ -719,5 +706,11 @@ Hyderabad-500032,India</p>
 			
 		});
 	</script><!--//smooth-scrolling-of-move-up--><!-- Bootstrap core JavaScript
-    ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="js/bootstrap.js"></script></body>
+    ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+function SendMail() {
+    alert("Hello world!");
+}
+</script
+	</body>
 </html>
