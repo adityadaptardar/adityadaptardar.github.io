@@ -21,7 +21,7 @@
 		});
 </script><!--//end-smooth-scrolling-->
 <script type="text/javascript">
-function sendMail() {
+function SendMail() {
     var link = "mailto:aditya.daptardar@gmail.com"
              + "&subject=" + escape("Enquiry from adityahere.com")
              + "&body=" 
@@ -681,12 +681,12 @@ Hyderabad-500032,India</p>
 <div class="clearfix"></div>
 
 <div class="contact-form">
-						<form action="sendMail()" method="post">
+						<form>
 							<input type="text" name="Name" placeholder="Name" required="">
 							<input class="email" name="Email" type="text" placeholder="Email" required="">
 							<input class="phone" name="Phone" type="text" placeholder="Phone" required="">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="submit" value="SUBMIT" >
+							<input type="submit" value="SUBMIT" onClick="SendMail()">
 						</form>
 </div>
 
