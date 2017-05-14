@@ -6,7 +6,7 @@
 	<title>Aditya Daptardar</title>
 	<!--mobile apps-->
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta content="aditya daptardar, daptardar, aditya, aaditya, adi, daptardar.in, adityadaptardar, adi dap, daptardar aditya" name="keywords" />
+	<meta content="aditya daptardar, daptardar, aditya, aaditya, adi, daptardar.in, adityadaptardar, adi dap, daptardar aditya, adityahere, aditya here" name="keywords" />
 	<meta content="Welcome to Personal Website of Aditya Daptardar." name="description" /><script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script><!--mobile apps--><!--Custom Theme files-->
 	<link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
@@ -20,6 +20,20 @@
 			});
 		});
 </script><!--//end-smooth-scrolling-->
+<script type="text/javascript">
+function sendMail() {
+    var link = "mailto:aditya.daptardar@gmail.com"
+             + "&subject=" + escape("Enquiry from adityahere.com")
+             + "&body=" 
+			 + "\nName: "+escape(document.getElementById('Name').value)
+			 + "\nEmail: "+escape(document.getElementById('Email').value)
+			 + "\nPhone: "+escape(document.getElementById('Phone').value)
+			 + "\nMessage: "+escape(document.getElementById('Message').value)
+    ;
+
+    window.location.href = link;
+}
+</script
 </head>
 <body><!--banner-->
 <div class="banner" id="home">
@@ -56,13 +70,13 @@
 	<li>
 	<ul class="address-text">
 		<li><b>E-MAIL </b></li>
-		<li><a href="mailto:aditya@daptardar.in">aditya@daptardar.in</a></li>
+		<li><a href="mailto:aditya.daptardar@gmail.com">aditya.daptardar@gmail.com</a></li>
 	</ul>
 	</li>
 	<li>
 	<ul class="address-text">
 		<li><b>WEBSITE </b></li>
-		<li><a href="http://www.daptardar.in">www.daptardar.in</a></li>
+		<li><a href="http://www.adityahere.com">www.adityahere.com</a></li>
 	</ul>
 	</li>
 	<li>
@@ -658,12 +672,26 @@ Hyderabad-500032,India</p>
 <div class="address-right">
 <p>Call me : +91 9657722469</p>
 
-<p>E-mail : <a href="mailto:aditya@daptardar.in">aditya@daptardar.in</a></p>
+<p>E-mail : <a href="mailto:aditya.daptardar@gmail.com">aditya.daptardar@gmail.com</a></p>
+<br>
+<br>
+
 </div>
 
 <div class="clearfix"></div>
 
-<div class="contact-form"><iframe frameborder="0" height="450" name="mailme" scrolling="no" src="contact/mail_me.php" width="100%"></iframe></div>
+<div class="contact-form">
+						<form action="sendMail()" method="post">
+							<input type="text" name="Name" placeholder="Name" required="">
+							<input class="email" name="Email" type="text" placeholder="Email" required="">
+							<input class="phone" name="Phone" type="text" placeholder="Phone" required="">
+							<textarea name="Message" placeholder="Message" required=""></textarea>
+							<input type="submit" value="SUBMIT" >
+						</form>
+</div>
+
+
+
 </div>
 
 <div class="clearfix"></div>
@@ -674,7 +702,7 @@ Hyderabad-500032,India</p>
 
 <div class="footer">
 <div class="container">
-<p>&copy; 2017 <a href="http://www.daptardar.in">daptardar.in</a>. All Rights Reserved.</p>
+<p>&copy; 2020 <a href="http://www.adityahere.com">adityahere.com</a>. All Rights Reserved.</p>
 </div>
 </div>
 <!--//footer--><!--smooth-scrolling-of-move-up--><script type="text/javascript">
