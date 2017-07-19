@@ -668,13 +668,27 @@ Hyderabad-500032,India</p>
 <div class="clearfix"></div>
 
 <div class="contact-form">
-						<form method="post" action="">
-							<input type="text" name="Name" placeholder="Name" required="">
-							<input class="email" name="Email" type="text" placeholder="Email" required="">
-							<input class="phone" name="Phone" type="text" placeholder="Phone" required="">
-							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="submit" value="submit" onClick=SendMail()>
-						</form>
+						<form>
+
+          
+            <input type="text" id="contact-name" name="name"       placeholder="Full Name" onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span><br>
+          
+
+            <input type="tel" id="contact-phone" name="phone" placeholder="Cell Phone" onkeyup='validatePhone()'>
+            <span class='error-message' id='phone-error'></span><br>
+          
+       
+            <input type="email" id="contact-email" name="email" placeholder="Emaild" onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span><br>
+        
+            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Message" onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span><br>
+
+        <button onclick='return validateForm()' class="btn btn-default">Submit</button>
+    <span class='error-message' id='submit-error'></span><br>
+    
+</form>
 </div>
 
 
