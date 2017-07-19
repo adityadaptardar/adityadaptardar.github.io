@@ -816,7 +816,7 @@ function validateForm() {
       return false;
   }
   else {
-SendMail()
+SendMail();
   }
 }
 
@@ -844,13 +844,13 @@ function producePrompt(message, promptLocation, color) {
 		
 		
 function SendMail() {
-    var link = "mailto:aditya.daptardar@gmail.com"
+    var link = "mailto:adityadaptardar@gmail.com"
              + "&subject=" + escape("Enquiry from adityahere.com")
              + "&body=" 
-			 + "\nName: "+escape(document.getElementById('Name').value)
-			 + "\nEmail: "+escape(document.getElementById('Email').value)
-			 + "\nPhone: "+escape(document.getElementById('Phone').value)
-			 + "\nMessage: "+escape(document.getElementById('Message').value)
+			 + "\nName: "+escape(document.getElementById('contact-name').value)
+			 + "\nEmail: "+escape(document.getElementById('contact-email').value)
+			 + "\nPhone: "+escape(document.getElementById('contact-phone').value)
+			 + "\nMessage: "+escape(document.getElementById('contact-message').value)
     ;
 
     window.location.href = link;
